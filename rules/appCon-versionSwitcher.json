@@ -1,0 +1,13 @@
+{
+  "scope": "/Apps/AppContainer",
+  "rules": [
+    {
+      "comment": "all static requests",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+/(?<filepath>.+)",
+      "source": "{scope}/{version}/{filepath}"
+    }
+  ],
+  "parameter": {
+    "version": "1.54.9"
+  }
+}

@@ -1,0 +1,5 @@
+[
+    { "name": "AppCon (Static Dev Server)", "path": "./appCon-staticDevServer.json" },
+    { "name": "AppCon (Version Switcher)", "path": "./appCon-versionSwitcher.json" },
+    { "name": "SWCDemo (Dev Server)", "path": "./swcDemo-devServer.json" }
+]

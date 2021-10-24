@@ -1,0 +1,50 @@
+{
+  "scope": "/Apps/AppContainer",
+  "rules": [
+    {
+      "group": "Debug Mode",
+      "comment": "Window pages",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&]+)\\.html",
+      "source": "http://localhost:{devServerPort}/{pagename}.dev.html"
+    },
+    {
+      "group": "Debug Mode",
+      "comment": "Default page",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
+      "source": "http://localhost:{devServerPort}/{defaultPage}.dev.html"
+    },
+    {
+      "group": "Debug Mode",
+      "comment": "Window pages",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(?<pagename>[^\\?\\/]+)\\.html",
+      "source": "http://localhost:{devServerPort}/{pagename}.dev.html"
+    },
+    {
+      "group": "Debug Mode",
+      "comment": "Internal dialogs",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/page\\/(?<pagename>[^\\?\\/]+)\\.html",
+      "source": "http://localhost:{devServerPort}/page/{pagename}.dev.html"
+    },
+    {
+      "group": "Release Mode",
+      "comment": "Window pages",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&\\/]+)\\.html",
+      "source": "http://localhost:{devServerPort}/{pagename}.html"
+    },
+    {
+      "group": "Release Mode",
+      "comment": "Default page",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
+      "source": "http://localhost:{devServerPort}/{defaultPage}.html"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "80",
+    "defaultPage": "openPlatformBrowser"
+  }
+}
