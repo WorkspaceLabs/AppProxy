@@ -1,0 +1,19 @@
+{
+  "scope": "/Apps/DataItemAuditUI",
+  "rules": [
+    {
+      "comment": "Default pages",
+      "pattern": "\\/Apps\\/DataItemAuditUI\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
+      "source": "http://localhost:{devServerPort}/{defaultPage}.html"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "\\/Apps\\/DataItemAuditUI\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "8081",
+    "defaultPage": "index"
+  }
+}
