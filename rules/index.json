@@ -2,5 +2,6 @@
     { "name": "AppCon (Static Dev Server)", "path": "./appCon-staticDevServer.json" },
     { "name": "AppCon (Version Switcher)", "path": "./appCon-versionSwitcher.json" },
     { "name": "SWCDemo (Dev Server)", "path": "./swcDemo-devServer.json" },
-    { "name": "DataItemAuditUI (Dev Server)", "path": "./dataItemAuditUI-devServer.json" }
+    { "name": "DataItemAuditUI (Dev Server)", "path": "./dataItemAuditUI-devServer.json" },
+    { "name": "Browser Startpage (open with SWCDemo)", "path": "./browserStartpage-devServer.json" }
 ]
