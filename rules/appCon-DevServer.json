@@ -1,0 +1,32 @@
+{
+  "scope": "/Apps/AppContainer",
+  "rules": [
+    {
+      "group": "Loader modules",
+      "comment": "Node Modules",
+      "pattern": "\\/Apps\\/AppContainer\\/node_modules\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/node_modules/{filepath}"
+    },
+    {
+      "group": "Loader modules",
+      "comment": "Hard-coded path",
+      "pattern": "\\/src\\/devServer\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/src/devServer/{filepath}"
+    },
+    {
+      "group": "AppServer Rule",
+      "comment": "Pages",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&]+)\\.html",
+      "source": "http://localhost:{devServerPort}/src/{pagename}.html"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/src/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "6001",
+    "defaultPage": "eikon5browser"
+  }
+}
