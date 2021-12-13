@@ -1,7 +1,8 @@
 [
-    { "name": "AppCon ES DevServer (port 6001)", "path": "./appCon-DevServer.json" },
-    { "name": "AppCon Legacy DevServer (port 80)", "path": "./appCon-staticDevServer.json" },
-    { "name": "SWCDemo (on localhost:8080)", "path": "./swcDemo-devServer.json" },
-    { "name": "DataItemAuditUI (localhost:8081)", "path": "./dataItemAuditUI-devServer.json" },
-    { "name": "Browser Startpage (port 6002)", "path": "./browserStartpage-devServer.json" }
+    { "name": "AppCon ES DevServer (port 6001)", "path": "./appCon-esDevServer.json" },
+    { "name": "AppCon Legacy DevServer (port 80)", "path": "./appCon-legacyDevServer.json" },
+    { "name": "SWCDemo Static DevServer (port 8080)", "path": "./swcDemo-devServer.json" },
+    { "name": "DataItemAuditUI DevServer (port 8081)", "path": "./dataItemAuditUI-devServer.json" },
+    { "name": "Browser Startpage DevServer (port 6002)", "path": "./browserStartpage-devServer.json" },
+    { "name": "Workspace Sharing DevServer (port 6003)", "path": "./workspaceSharing-devServer.json" }
 ]

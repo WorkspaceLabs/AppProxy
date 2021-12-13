@@ -1,0 +1,14 @@
+{
+  "scope": "/rap/workspacesharing",
+  "rules": [
+    {
+      "comment": "all files",
+      "pattern": "\\/rap\\/workspacesharing\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "6003",
+    "defaultPage": "index"
+  }
+}
