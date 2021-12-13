@@ -1,24 +1,14 @@
 {
-  "scope": "/Apps/SWCDemo",
+  "scope": "/rap/workspacestartpage",
   "rules": [
     {
-      "comment": "Window pages",
-      "pattern": "\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&\\/]+)\\.html",
-      "source": "http://localhost:{devServerPort}/{pagename}.html"
-    },
-    {
-      "comment": "Default pages",
-      "pattern": "\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
-      "source": "http://localhost:{devServerPort}/{defaultPage}.html"
-    },
-    {
-      "comment": "Other files",
-      "pattern": "\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "comment": "all files",
+      "pattern": "\\/rap\\/workspacestartpage\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/{filepath}"
     }
   ],
   "parameter": {
-    "devServerPort": "8080",
+    "devServerPort": "6002",
     "defaultPage": "index"
   }
 }

@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @license
  * Copyright 2017 Google LLC
