@@ -1,0 +1,19 @@
+{
+  "scope": "/rap/powerbi-poc-ui",
+  "rules": [
+    {
+      "comment": "All files",
+      "pattern": "\\/rap\\/powerbi-poc-ui\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}"
+    },
+    {
+      "comment": "Static folder",
+      "pattern": "\\/static\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/static/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "3000",
+    "defaultPage": "index"
+  }
+}

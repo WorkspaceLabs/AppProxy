@@ -26,5 +26,19 @@
         "path": "workspaceSharing-devServer.json"
       }
     ]
+  },
+  {
+    "scope": "/rap/powerbi-poc-ui",
+    "name": "PowerBI Embedded POC UI",
+    "icon": "book",
+    "autoResponders": [
+      {
+        "group": "Dev Server (port 3000)",
+        "name": "Development Mode",
+        "icon": "digging",
+        "description": "Require local server from `npm run start` command",
+        "path": "powerbiPocUi-devServer.json"
+      }
+    ]
   }
 ]
