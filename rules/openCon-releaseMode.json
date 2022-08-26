@@ -1,0 +1,14 @@
+{
+  "scope": "/rap/opencontainer",
+  "rules": [
+    {
+      "comment": "Other files",
+      "pattern": "\\/rap\\/opencontainer\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/dist/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "6001",
+    "defaultPage": "salesforcewindow"
+  }
+}
