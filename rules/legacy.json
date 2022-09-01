@@ -21,6 +21,20 @@
     ]
   },
   {
+    "scope": "/salesforce",
+    "name": "Salesforce Window",
+    "icon": "cloud",
+    "autoResponders": [
+      {
+        "group": "ES Dev Server (port 6001)",
+        "name": "Development Mode",
+        "icon": "digging",
+        "description": "Require local server from `npm run serve` command",
+        "path": "salesforce-esDevServer.json"
+      }
+    ]
+  },
+  {
     "scope": "/rap/opencontainer",
     "name": "OpenContainer",
     "icon": "wand-magic",
