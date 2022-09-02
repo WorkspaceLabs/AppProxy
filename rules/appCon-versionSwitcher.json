@@ -3,7 +3,7 @@
   "rules": [
     {
       "comment": "all static requests",
-      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+/(?<filepath>.+)",
+      "pattern": "^\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+/(?<filepath>.+)",
       "source": "{scope}/{version}/{filepath}"
     }
   ],

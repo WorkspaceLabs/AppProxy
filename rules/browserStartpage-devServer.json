@@ -3,7 +3,7 @@
   "rules": [
     {
       "comment": "all files",
-      "pattern": "\\/rap\\/workspacestartpage\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "pattern": "^\\/rap\\/workspacestartpage\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/{filepath}"
     }
   ],

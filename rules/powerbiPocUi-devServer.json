@@ -3,12 +3,12 @@
   "rules": [
     {
       "comment": "All files",
-      "pattern": "\\/rap\\/powerbi-poc-ui\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "pattern": "^\\/rap\\/powerbi-poc-ui\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/{filepath}"
     },
     {
       "comment": "Static folder",
-      "pattern": "\\/static\\/(?<filepath>[^\\?]+)",
+      "pattern": "^\\/static\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/static/{filepath}"
     }
   ],

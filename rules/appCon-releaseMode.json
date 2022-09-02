@@ -4,12 +4,12 @@
     {
       "group": "Regular Modules",
       "comment": "Legacy Pages query string",
-      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&]+)\\.html",
+      "pattern": "^\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&]+)\\.html",
       "source": "http://localhost:{devServerPort}/dist/{pagename}.html"
     },
     {
       "comment": "Other files",
-      "pattern": "\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "pattern": "^\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/dist/{filepath}"
     }
   ],
