@@ -3,7 +3,7 @@
   "rules": [
     {
       "comment": "Other files",
-      "pattern": "^\\/rap\\/opencontainer\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "pattern": "^\\/rap\\/opencontainer\\/\\d+\\.\\d+\\.\\d+(\\.\\d+)?\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/dist/{filepath}"
     }
   ],
