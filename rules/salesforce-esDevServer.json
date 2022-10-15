@@ -3,8 +3,8 @@
   "rules": [
     {
       "comment": "Index file",
-      "pattern": "^\\/salesforce\\/(?<filepath>[^\\?]*)",
-      "source": "http://localhost:{devServerPort}/salesforce/{filepath}",
+        "pattern": "^\\/salesforce\\/(?<search>[^\\?]*)",
+        "source": "http://localhost:{devServerPort}/salesforce/{defaultPage}",
       "customReferrerHeader": "x-referrer"
     },
     {
@@ -30,6 +30,6 @@
   ],
   "parameter": {
     "devServerPort": "6001",
-    "defaultPage": "salesforcewindow"
+      "defaultPage": "salesforceWindow.html"
   }
 }
