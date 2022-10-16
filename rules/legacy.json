@@ -73,6 +73,13 @@
         "icon": "file-alt",
         "description": "Require local server from `http-server --cors` command",
         "path": "swcDemo-devServer.json"
+      },
+      {
+        "group": "ES Dev Server (port 8080)",
+        "name": "Development Mode",
+        "icon": "digging",
+        "description": "Require local server from `npm run serve` command",
+        "path": "swcDemo-esDevServer.json"
       }
     ]
   },

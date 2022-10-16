@@ -1,0 +1,36 @@
+{
+  "scope": "/Apps/SWCDemo",
+  "rules": [
+    {
+      "group": "Core Modules",
+      "comment": "Node Module loader",
+      "pattern": "^\\/Apps\\/SWCDemo\\/node_modules\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/node_modules/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Core Modules",
+      "comment": "Dev Server helper",
+      "pattern": "^\\/src\\/devServer\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/src/devServer/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Regular Modules",
+      "comment": "Legacy Pages query string",
+      "pattern": "^\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&]+)\\.html",
+      "source": "http://localhost:{devServerPort}/src/{pagename}.html",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "^\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/src/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "8080",
+    "defaultPage": "index"
+  }
+}
