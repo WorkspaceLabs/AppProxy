@@ -1,0 +1,15 @@
+{
+  "scope": "/Apps/AppContainer",
+  "rules": [
+    {
+      "comment": "Other files",
+      "pattern": "^\\/Apps\\/AppContainer\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "6001",
+    "defaultPage": "eikon5browser"
+  }
+}

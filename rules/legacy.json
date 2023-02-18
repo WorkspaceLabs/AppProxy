@@ -13,6 +13,13 @@
       },
       {
         "group": "ES Dev Server (port 6001)",
+        "name": "Package Development Mode",
+        "icon": "file-archive",
+        "description": "Require local server from `npm run serve` command",
+        "path": "appCon-packageMode.json"
+      },
+      {
+        "group": "ES Dev Server (port 6001)",
         "name": "Release Mode",
         "icon": "rocket",
         "description": "Generate dist folder via `npm run release` command and create local server from `npm run serve` command",
