@@ -1,5 +1,5 @@
 {
-  "scope": "/Apps/SWCDemo",
+  "scope": "/Apps/framework-banner-demo",
   "rules": [
     {
       "group": "Vite Paths",
@@ -17,17 +17,17 @@
     },
     {
       "comment": "Window pages",
-      "pattern": "^\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&\\/]+)\\.html",
+      "pattern": "^\\/Apps\\/framework-banner-demo\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&\\/]+)\\.html",
       "source": "http://localhost:{devServerPort}/{pagename}.html"
     },
     {
       "comment": "Default pages",
-      "pattern": "^\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
+      "pattern": "^\\/Apps\\/framework-banner-demo\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
       "source": "http://localhost:{devServerPort}/{defaultPage}.html"
     },
     {
       "comment": "Other files",
-      "pattern": "^\\/Apps\\/SWCDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "pattern": "^\\/Apps\\/framework-banner-demo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/{filepath}"
     }
   ],
