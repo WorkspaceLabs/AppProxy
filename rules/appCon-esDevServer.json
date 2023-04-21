@@ -3,6 +3,13 @@
   "rules": [
     {
       "group": "Core Modules",
+      "comment": "Node Module loader",
+      "pattern": "\\/Apps\\/AppContainer\\/node_modules\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/node_modules/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Core Modules",
       "comment": "Dev Server helper",
       "pattern": "^\\/src\\/devServer\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/src/devServer/{filepath}",
