@@ -11,8 +11,8 @@
     {
       "group": "Vite Paths",
       "comment": "Node modules",
-      "pattern": "^\\/node_modules\\/(?<filepath>[^\\?]+)",
-      "source": "http://localhost:{devServerPort}/node_modules/{filepath}",
+      "pattern": "^\\/(?<folder>node_modules|packages)\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{folder}/{filepath}",
       "customReferrerHeader": "x-referrer"
     },
     {
