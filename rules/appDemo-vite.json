@@ -1,0 +1,38 @@
+{
+  "scope": "/Apps/AppDemo",
+  "rules": [
+    {
+      "group": "Vite Paths",
+      "comment": "Vite modules",
+      "pattern": "^\\/@vite\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/@vite/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Vite Paths",
+      "comment": "Node modules",
+      "pattern": "^\\/(?<folder>node_modules|packages)\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{folder}/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "comment": "Window pages",
+      "pattern": "^\\/Apps\\/AppDemo\\/\\d+\\.\\d+\\.\\d+\\/\\?page=(?<pagename>[^&\\/]+)\\.html",
+      "source": "http://localhost:{devServerPort}/{pagename}.html"
+    },
+    {
+      "comment": "Default pages",
+      "pattern": "^\\/Apps\\/AppDemo\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
+      "source": "http://localhost:{devServerPort}/{defaultPage}.html"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "^\\/Apps\\/AppDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "5173",
+    "defaultPage": "index"
+  }
+}

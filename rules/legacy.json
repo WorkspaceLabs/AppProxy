@@ -105,6 +105,27 @@
     ]
   },
   {
+    "scope": "/Apps/AppDemo",
+    "name": "App Demo",
+    "icon": "seedling",
+    "autoResponders": [
+      {
+        "group": "Vite Server (port 5173)",
+        "name": "Development Mode",
+        "icon": "digging",
+        "description": "Require local Vite server from `npm run serve` command",
+        "path": "appDemo-vite.json"
+      },
+      {
+        "group": "Static Dev Server (port 8080)",
+        "name": "Release Mode",
+        "icon": "rocket",
+        "description": "Require local server from `npm run serve:dist` command",
+        "path": "appDemo-httpServer.json"
+      }
+    ]
+  },
+  {
     "scope": "/Apps/framework-banner-demo",
     "name": "Framework Banner Demo",
     "icon": "tree-palm",
