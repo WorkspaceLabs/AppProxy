@@ -16,6 +16,13 @@
       "customReferrerHeader": "x-referrer"
     },
     {
+      "group": "Core Modules",
+      "comment": "Outside root",
+      "pattern": "^\\/__wds-outside-root__\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
       "comment": "Other files",
       "pattern": "^\\/rap\\/opencontainer\\/\\d+\\.\\d+\\.\\d+(\\.\\d+)?\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/src/{filepath}",
