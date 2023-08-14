@@ -26,6 +26,11 @@
       "source": "http://localhost:{devServerPort}/{defaultPage}.html"
     },
     {
+      "comment": "known folders",
+      "pattern": "^\\/(?<dir>src|test|tools|packages)\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{dir}/{filepath}"
+    },
+    {
       "comment": "Other files",
       "pattern": "^\\/Apps\\/AppDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/{filepath}"
