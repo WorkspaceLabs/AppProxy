@@ -1,0 +1,20 @@
+{
+  "scope": "/openfin",
+    "rules": [
+    {
+        "comment": "Index file",
+        "pattern": "^\\/openfin\\/(?<search>[^\\?]*)",
+        "source": "http://localhost:{devServerPort}/dist/{defaultPage}",
+        "customReferrerHeader": "x-referrer"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "^\\/rap\\/opencontainer\\/\\d+\\.\\d+\\.\\d+(\\.\\d+)?\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/dist/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "6001",
+      "defaultPage": "openfinWindow.html"
+  }
+}
