@@ -49,6 +49,27 @@
     ]
   },
   {
+    "scope": "/msteams",
+    "name": "MS Teams Window",
+    "icon": "users",
+    "autoResponders": [
+      {
+        "group": "ES Dev Server (port 6001)",
+        "name": "Development Mode",
+        "icon": "digging",
+        "description": "Require local server from `npm run serve` command",
+        "path": "msteams-esDevServer.json"
+      },
+    {
+        "group": "ES Dev Server (port 6001)",
+        "name": "Release Mode",
+        "icon": "rocket",
+        "description": "Generate dist folder via `npm run release-cdn` command and create local server from `npm run serve` command",
+        "path": "msteams-releaseMode.json"
+    }
+    ]
+  },
+  {
     "scope": "/rap/opencontainer",
     "name": "OpenContainer",
     "icon": "wand-magic",

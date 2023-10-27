@@ -1,0 +1,42 @@
+{
+  "scope": "/msteams",
+  "rules": [
+    {
+      "comment": "Index file",
+        "pattern": "^\\/msteams\\/(?<search>[^\\?]*)",
+        "source": "http://localhost:{devServerPort}/msteams/{defaultPage}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Core Modules",
+      "comment": "Node Module loader",
+      "pattern": "^\\/rap\\/opencontainer\\/node_modules\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/node_modules/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Core Modules",
+      "comment": "Dev Server helper",
+      "pattern": "^\\/src\\/devServer\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/src/devServer/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Core Modules",
+      "comment": "Outside root",
+      "pattern": "^\\/__wds-outside-root__\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "^\\/rap\\/opencontainer\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/src/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "6001",
+      "defaultPage": "msteamsWindow.html"
+  }
+}
