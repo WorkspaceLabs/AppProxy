@@ -4,7 +4,7 @@
     {
       "comment": "Index file",
         "pattern": "^\\/salesforce\\/(?<search>[^\\?]*)",
-        "source": "http://localhost:{devServerPort}/salesforce/{defaultPage}",
+        "source": "http://localhost:{devServerPort}/src/{defaultPage}",
       "customReferrerHeader": "x-referrer"
     },
     {
