@@ -4,7 +4,7 @@
     {
       "comment": "Index file",
         "pattern": "^\\/openfin\\/(?<search>[^\\?]*)",
-        "source": "http://localhost:{devServerPort}/src/{defaultPage}",
+        "source": "http://localhost:{devServerPort}/openfin/{defaultPage}",
       "customReferrerHeader": "x-referrer"
     },
     {
