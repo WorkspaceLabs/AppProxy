@@ -1,0 +1,14 @@
+{
+    "scope": "/rap/shareviamsteams",
+    "rules": [
+        {
+            "comment": "all files",
+            "pattern": "^\\/rap\\/shareviamsteams\\/\\d+\\.\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+            "source": "http://localhost:{devServerPort}/{filepath}"
+        }
+    ],
+    "parameter": {
+        "devServerPort": "6004",
+        "defaultPage": "index"
+    }
+}

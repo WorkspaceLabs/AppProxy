@@ -1,86 +1,100 @@
 [
-  {
-    "scope": "/rap/opencontainer",
-    "name": "OpenContainer",
-    "icon": "wand-magic",
-    "autoResponders": [
-      {
-        "group": "ES Dev Server (port 6001)",
-        "name": "Development Mode",
-        "icon": "digging",
-        "description": "Require local server from `npm run serve` command",
-        "path": "openCon-esDevServer.json"
-      },
-      {
-        "group": "ES Dev Server (port 6001)",
-        "name": "Release Mode",
-        "icon": "rocket",
-        "description": "Generate dist folder via `npm run release` command and create local server from `npm run serve` command",
-        "path": "openCon-releaseMode.json"
-      }
-    ]
-  },
-  {
-    "scope": "/openfin",
-    "name": "OpenFin Window",
-    "icon": "newspaper",
-    "autoResponders": [
-      {
-        "group": "ES Dev Server (port 6001)",
-        "name": "Development Mode",
-        "icon": "digging",
-        "description": "Require local server from `npm run serve` command",
-        "path": "openfin-esDevServer.json"
-      },
     {
-        "group": "ES Dev Server (port 6001)",
-        "name": "Release Mode",
-        "icon": "rocket",
-        "description": "Generate dist folder via `npm run release-cdn` command and create local server from `npm run serve` command",
-        "path": "openfin-releaseMode.json"
+        "scope": "/rap/opencontainer",
+        "name": "OpenContainer",
+        "icon": "wand-magic",
+        "autoResponders": [
+            {
+                "group": "ES Dev Server (port 6001)",
+                "name": "Development Mode",
+                "icon": "digging",
+                "description": "Require local server from `npm run serve` command",
+                "path": "openCon-esDevServer.json"
+            },
+            {
+                "group": "ES Dev Server (port 6001)",
+                "name": "Release Mode",
+                "icon": "rocket",
+                "description": "Generate dist folder via `npm run release` command and create local server from `npm run serve` command",
+                "path": "openCon-releaseMode.json"
+            }
+        ]
+    },
+    {
+        "scope": "/openfin",
+        "name": "OpenFin Window",
+        "icon": "newspaper",
+        "autoResponders": [
+            {
+                "group": "ES Dev Server (port 6001)",
+                "name": "Development Mode",
+                "icon": "digging",
+                "description": "Require local server from `npm run serve` command",
+                "path": "openfin-esDevServer.json"
+            },
+            {
+                "group": "ES Dev Server (port 6001)",
+                "name": "Release Mode",
+                "icon": "rocket",
+                "description": "Generate dist folder via `npm run release-cdn` command and create local server from `npm run serve` command",
+                "path": "openfin-releaseMode.json"
+            }
+        ]
+    },
+    {
+        "scope": "/rap/workspacestartpage",
+        "name": "Workspace StartPage",
+        "icon": "home-lg-alt",
+        "autoResponders": [
+            {
+                "group": "Dev Server (port 6002)",
+                "name": "Development Mode",
+                "icon": "digging",
+                "description": "Require local server from `npm run serve` command",
+                "path": "browserStartpage-devServer.json"
+            }
+        ]
+    },
+    {
+        "scope": "/rap/workspacesharing",
+        "name": "Workspace Sharing",
+        "icon": "share-alt",
+        "autoResponders": [
+            {
+                "group": "Dev Server (port 6003)",
+                "name": "Development Mode",
+                "icon": "digging",
+                "description": "Require local server from `npm run serve` command",
+                "path": "workspaceSharing-devServer.json"
+            }
+        ]
+    },
+    {
+        "scope": "/rap/shareviamsteams",
+        "name": "Share Via MS Teams",
+        "icon": "user-friends",
+        "autoResponders": [
+            {
+                "group": "Dev Server (port 6004)",
+                "name": "Development Mode",
+                "icon": "digging",
+                "description": "Require local server from `npm run serve` command",
+                "path": "shareViaMsTeams-devServer.json"
+            }
+        ]
+    },
+    {
+        "scope": "/rap/powerbi-poc-ui",
+        "name": "PowerBI UI",
+        "icon": "book",
+        "autoResponders": [
+            {
+                "group": "Dev Server (port 3000)",
+                "name": "Development Mode",
+                "icon": "digging",
+                "description": "Require local server from `npm run start` command",
+                "path": "powerbiPocUi-devServer.json"
+            }
+        ]
     }
-    ]
-  },
-  {
-    "scope": "/rap/workspacestartpage",
-    "name": "Workspace StartPage",
-    "icon": "home-lg-alt",
-    "autoResponders": [
-      {
-        "group": "Dev Server (port 6002)",
-        "name": "Development Mode",
-        "icon": "digging",
-        "description": "Require local server from `npm run serve` command",
-        "path": "browserStartpage-devServer.json"
-      }
-    ]
-  },
-  {
-    "scope": "/rap/workspacesharing",
-    "name": "Workspace Sharing",
-    "icon": "share-alt",
-    "autoResponders": [
-      {
-        "group": "Dev Server (port 6003)",
-        "name": "Development Mode",
-        "icon": "digging",
-        "description": "Require local server from `npm run serve` command",
-        "path": "workspaceSharing-devServer.json"
-      }
-    ]
-  },
-  {
-    "scope": "/rap/powerbi-poc-ui",
-    "name": "PowerBI UI",
-    "icon": "book",
-    "autoResponders": [
-      {
-        "group": "Dev Server (port 3000)",
-        "name": "Development Mode",
-        "icon": "digging",
-        "description": "Require local server from `npm run start` command",
-        "path": "powerbiPocUi-devServer.json"
-      }
-    ]
-  }
 ]
