@@ -72,7 +72,7 @@
     {
         "scope": "/rap/shareviamsteams",
         "name": "Share Via MS Teams",
-        "icon": "user-friends",
+        "icon": "share-alt",
         "autoResponders": [
             {
                 "group": "Dev Server (port 6004)",
