@@ -4,8 +4,8 @@
     {
       "group": "Vite Paths",
       "comment": "Vite modules",
-      "pattern": "^\\/@vite\\/(?<filepath>[^\\?]+)",
-      "source": "http://localhost:{devServerPort}/@vite/{filepath}",
+      "pattern": "^\\/@(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/@{filepath}",
       "customReferrerHeader": "x-referrer"
     },
     {
@@ -29,6 +29,11 @@
       "comment": "known folders",
       "pattern": "^\\/(?<dir>src|test|tools|packages)\\/(?<filepath>[^\\?]+)",
       "source": "http://localhost:{devServerPort}/{dir}/{filepath}"
+    },
+    {
+      "comment": "public files",
+      "pattern": "^\\/(?<filename>[^\\/\\?\\$]+)\\.(?<fileextension>[^\\/\\.\\?\\$]+)",
+      "source": "http://localhost:{devServerPort}/{filename}.{fileextension}"
     },
     {
       "comment": "Other files",
