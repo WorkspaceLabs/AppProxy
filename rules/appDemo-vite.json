@@ -4,15 +4,15 @@
     {
       "group": "Vite Paths",
       "comment": "Vite modules",
-      "pattern": "^\\/@(?<filepath>[^\\?]+)",
-      "source": "http://localhost:{devServerPort}/@{filepath}",
+      "pattern": "^\\/@(?<filepath>[^\\?]+)(?<query>\\?[^$]+)?",
+      "source": "http://localhost:{devServerPort}/@{filepath}{query}",
       "customReferrerHeader": "x-referrer"
     },
     {
       "group": "Vite Paths",
       "comment": "Node modules",
-      "pattern": "^\\/(?<folder>node_modules|packages)\\/(?<filepath>[^\\?]+)",
-      "source": "http://localhost:{devServerPort}/{folder}/{filepath}",
+      "pattern": "^\\/(?<folder>node_modules|packages)\\/(?<filepath>[^\\?]+)(?<query>\\?[^$]+)?",
+      "source": "http://localhost:{devServerPort}/{folder}/{filepath}{query}",
       "customReferrerHeader": "x-referrer"
     },
     {
@@ -27,8 +27,8 @@
     },
     {
       "comment": "known folders",
-      "pattern": "^\\/(?<dir>src|test|tools|packages)\\/(?<filepath>[^\\?]+)",
-      "source": "http://localhost:{devServerPort}/{dir}/{filepath}"
+      "pattern": "^\\/(?<dir>src|test|tools|packages)\\/(?<filepath>[^\\?]+)(?<query>\\?[^$]+)?",
+      "source": "http://localhost:{devServerPort}/{dir}/{filepath}{query}"
     },
     {
       "comment": "public files",
@@ -42,8 +42,8 @@
     },
     {
       "comment": "Other files",
-      "pattern": "^\\/Apps\\/AppDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
-      "source": "http://localhost:{devServerPort}/{filepath}"
+      "pattern": "^\\/Apps\\/AppDemo\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)(?<query>\\?[^$]+)?",
+      "source": "http://localhost:{devServerPort}/{filepath}{query}"
     }
   ],
   "parameter": {
