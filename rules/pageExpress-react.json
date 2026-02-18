@@ -1,0 +1,48 @@
+{
+  "scope": "/Apps/PX",
+  "rules": [
+    {
+      "group": "Dev Paths",
+      "comment": "React modules",
+      "pattern": "^\\/@(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/@{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "group": "Dev Paths",
+      "comment": "Node modules",
+      "pattern": "^\\/(?<folder>node_modules|packages)\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{folder}/{filepath}",
+      "customReferrerHeader": "x-referrer"
+    },
+    {
+      "comment": "Default pages",
+      "pattern": "^\\/Apps\\/PX\\/\\d+\\.\\d+\\.\\d+\\/(\\?.*)?$",
+      "source": "http://localhost:{devServerPort}/{defaultPage}.html"
+    },
+    {
+      "comment": "known folders",
+      "pattern": "^\\/(?<dir>src|test|tools|packages)\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{dir}/{filepath}"
+    },
+    {
+      "comment": "public files",
+      "pattern": "^\\/(?<filename>[^\\/\\?\\$]+)\\.(?<fileextension>[^\\/\\.\\?\\$]+)",
+      "source": "http://localhost:{devServerPort}/{filename}.{fileextension}"
+    },
+    {
+      "comment": "known path",
+      "pattern": "^\\/(?<action>ping)",
+      "source": "http://localhost:{devServerPort}/{action}"
+    },
+    {
+      "comment": "Other files",
+      "pattern": "^\\/Apps\\/PX\\/\\d+\\.\\d+\\.\\d+\\/(?<filepath>[^\\?]+)",
+      "source": "http://localhost:{devServerPort}/{filepath}"
+    }
+  ],
+  "parameter": {
+    "devServerPort": "3000",
+    "defaultPage": "index"
+  }
+}

@@ -201,5 +201,19 @@
             "path": "shareViaMsTeams-devServer.json"
         }
     ]
-  }
+  },
+  {
+    "scope": "/Apps/PX",
+    "name": "PageExpress Admin Demo",
+    "icon": "user-shield",
+    "autoResponders": [
+      {
+        "group": "react script start (port 3000)",
+        "name": "Development Mode",
+        "icon": "digging",
+        "description": "Require local react from `npm run start` command",
+        "path": "pageExpress-react.json"
+      }
+    ]
+  }  
 ]
